@@ -2,9 +2,9 @@
 
 HTML & CSS & Boostrap & Python & Django & Sécurité & Gestion d'erreurs .
 
-cONTEXT :
+CONTEXT :
 
-Creation d'une application web pour la gestion de sktock 
+Creation d'une application web pour la gestion de stock . 
 
 TACHES :
 
