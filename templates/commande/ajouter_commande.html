@@ -1,0 +1,16 @@
+{% extends 'main.html'%}
+
+{% block contenu %}
+<div align="center">
+    <div class="col-md-6">
+        <div class="card card-body">
+<form action="" method="POST">
+    {%csrf_token%}
+    {{form}}
+    <br><br>
+    <input type="submit" name="Envoyer" style="align:center">
+</form>
+</div>
+</div>
+</div>
+{% endblock%}

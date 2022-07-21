@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% block contenu %}
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Nom</th>
+					<th>Telephone</th>
+					<th>Date Creation</th>
+
+				</tr>
+				{%for client in clients %}
+				<tr>
+				<th>{{client.nom}}</th>
+				<th>{{client.telephone}}</th>
+				<th>{{client.date_creation}}</th>
+
+				</tr>
+                {% endfor %}
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock%}

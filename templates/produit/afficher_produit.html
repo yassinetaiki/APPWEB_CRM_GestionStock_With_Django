@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+
+{% block contenu %}
+<div class="row">
+	<div class="col-md">
+		<div class="card card-body">
+			<table class="table table-sm">
+				<tr>
+					<th>Nom</th>
+					<th>Prix</th>
+					<th>Date Creation</th>
+
+				</tr>
+				{%for produit in produits %}
+				<tr>
+				<th>{{produit.nom}}</th>
+				<th>{{produit.prix}}</th>
+				<th>{{produit.date_creation}}</th>
+
+
+				</tr>
+                {% endfor %}
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock%}
